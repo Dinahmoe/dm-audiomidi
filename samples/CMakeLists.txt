@@ -19,9 +19,5 @@ TARGET_LINK_LIBRARIES(dm_audiomidi_converter dm-audiomidi dm-utils ${DM_AUDIOMID
 SET_TARGET_PROPERTIES(dm_audiomidi_converter PROPERTIES LINK_FLAGS "${DM_AUDIOMIDI_LINK_FLAGS} ${DM_UTILS_LINK_FLAGS} ${DM_LOG_LINK_FLAGS}")
 FSET_TARGET_OPTIONS(dm_audiomidi_converter "")
 
-ADD_EXECUTABLE(dm_mididump "${CMAKE_CURRENT_SOURCE_DIR}/dm_audiomidi_mididump.cpp")
-TARGET_LINK_LIBRARIES(dm_mididump dm-audiomidi dm-utils)
-SET_TARGET_PROPERTIES(dm_mididump PROPERTIES LINK_FLAGS "${DM_AUDIOMIDI_LINK_FLAGS}")
-FSET_TARGET_OPTIONS(dm_mididump "")
 
 
