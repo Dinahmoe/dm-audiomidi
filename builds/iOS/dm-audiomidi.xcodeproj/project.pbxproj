@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A4F08F52E764835B5DA02F0 /* AudioFormat_ogg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8C703E4774B4D8FB9CF295E /* AudioFormat_ogg.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-value -Wno-sign-compare -Wno-all"; }; };
+		2FB079734F7D40F89BAD09B3 /* AudioFormat_CoreAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDB2138AC52A451894B6B9D5 /* AudioFormat_CoreAudio.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		99F6B61310F446909A3F4729 /* AudioFormatsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FCF8DAD07420D883886AD /* AudioFormatsManager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01828E7D84534C8C956899DA /* AudioBuffer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioBuffer.hpp; path = include/AudioBuffer.hpp; sourceTree = SOURCE_ROOT; };
+		20E1C7620495459D80E4C26A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		36F4CC9F3DF14576B62CA6A5 /* AudioFormatsManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioFormatsManager.hpp; path = include/AudioFormatsManager.hpp; sourceTree = SOURCE_ROOT; };
+		3A2FCF8DAD07420D883886AD /* AudioFormatsManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFormatsManager.cpp; path = src/AudioFormatsManager.cpp; sourceTree = SOURCE_ROOT; };
+		4B7CDDB1AC654C49B42F0DE3 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5961AF4BD4EE43F3B52A5FFF /* AudioFormat_CoreAudio.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioFormat_CoreAudio.hpp; path = src/AudioFormat_CoreAudio.hpp; sourceTree = SOURCE_ROOT; };
+		6F8C54DA7A70447BBB3300CB /* AudioFormatTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFormatTypes.h; path = include/AudioFormatTypes.h; sourceTree = SOURCE_ROOT; };
+		904FD2297A404C8C84DD4BA5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		971F0E0C3F88469DA3949EAC /* AudioFormat.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioFormat.hpp; path = include/AudioFormat.hpp; sourceTree = SOURCE_ROOT; };
+		A3D50240066449C18753CB91 /* AudioFormatOptions.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioFormatOptions.hpp; path = include/AudioFormatOptions.hpp; sourceTree = SOURCE_ROOT; };
+		A45E6FD4323C4C01984CE18A /* AudioFormat_ogg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AudioFormat_ogg.hpp; path = src/AudioFormat_ogg.hpp; sourceTree = SOURCE_ROOT; };
+		C8C703E4774B4D8FB9CF295E /* AudioFormat_ogg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFormat_ogg.cpp; path = src/AudioFormat_ogg.cpp; sourceTree = SOURCE_ROOT; };
+		E01E4D3C8B354A768D347612 /* libdm-audiomidi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libdm-audiomidi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB2138AC52A451894B6B9D5 /* AudioFormat_CoreAudio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFormat_CoreAudio.cpp; path = src/AudioFormat_CoreAudio.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3713185A6ED24B48A5B177A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3E2F41CC4E6342A6BAD5263E /* ZERO_CHECK */,
+				38A33D8FCCBF46A58F1681F0 /* ALL_BUILD */,
+				38A5DA28FC3D417A996FA422 /* dm-audiomidi */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		38A33D8FCCBF46A58F1681F0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				87D794026CBB4181AA21EA92 /* CMake Rules */,
+				904FD2297A404C8C84DD4BA5 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		38A5DA28FC3D417A996FA422 /* dm-audiomidi */ = {
+			isa = PBXGroup;
+			children = (
+				5F3842AFC3624A418BE11F6C /* Header Files */,
+				F4E8B61BF923450DA5656905 /* Source Files */,
+				4B7CDDB1AC654C49B42F0DE3 /* CMakeLists.txt */,
+			);
+			name = "dm-audiomidi";
+			sourceTree = "<group>";
+		};
+		3E2F41CC4E6342A6BAD5263E /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				C1B76CE5430840D2A3857D41 /* CMake Rules */,
+				20E1C7620495459D80E4C26A /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		5653A0B048224676A03F4AC5 = {
+			isa = PBXGroup;
+			children = (
+				3713185A6ED24B48A5B177A5 /* Sources */,
+				90C732DF6DF8458AA73D7289 /* Resources */,
+				6F2849C9EFD54B66A086AA15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F3842AFC3624A418BE11F6C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				01828E7D84534C8C956899DA /* AudioBuffer.hpp */,
+				971F0E0C3F88469DA3949EAC /* AudioFormat.hpp */,
+				A3D50240066449C18753CB91 /* AudioFormatOptions.hpp */,
+				6F8C54DA7A70447BBB3300CB /* AudioFormatTypes.h */,
+				36F4CC9F3DF14576B62CA6A5 /* AudioFormatsManager.hpp */,
+				5961AF4BD4EE43F3B52A5FFF /* AudioFormat_CoreAudio.hpp */,
+				A45E6FD4323C4C01984CE18A /* AudioFormat_ogg.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6F2849C9EFD54B66A086AA15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E01E4D3C8B354A768D347612 /* libdm-audiomidi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87D794026CBB4181AA21EA92 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		90C732DF6DF8458AA73D7289 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C1B76CE5430840D2A3857D41 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F4E8B61BF923450DA5656905 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB2138AC52A451894B6B9D5 /* AudioFormat_CoreAudio.cpp */,
+				C8C703E4774B4D8FB9CF295E /* AudioFormat_ogg.cpp */,
+				3A2FCF8DAD07420D883886AD /* AudioFormatsManager.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		552FF95F11A045BF9AB3572C /* dm-audiomidi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D7677D090C042DAA7E85EAB /* Build configuration list for PBXNativeTarget "dm-audiomidi" */;
+			buildPhases = (
+				63921B5F039143AE9D18E059 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dm-audiomidi";
+			productName = "dm-audiomidi";
+			productReference = E01E4D3C8B354A768D347612 /* libdm-audiomidi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B4DFA3A42A643BC813D5FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 23C8551407C5498C9A2C4AB3 /* Build configuration list for PBXProject "dm-audiomidi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5653A0B048224676A03F4AC5;
+			projectDirPath = ../../;
+			projectRoot = "";
+			targets = (
+				552FF95F11A045BF9AB3572C /* dm-audiomidi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63921B5F039143AE9D18E059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB079734F7D40F89BAD09B3 /* AudioFormat_CoreAudio.cpp in Sources */,
+				2A4F08F52E764835B5DA02F0 /* AudioFormat_ogg.cpp in Sources */,
+				99F6B61310F446909A3F4729 /* AudioFormatsManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0841C41DEC85461DB22FF620 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = "/Volumes/Data/WORK/dinahmoe/nodal/dm-audiomidi/builds/MacOS/build";
+			};
+			name = MinSizeRel;
+		};
+		0DC10D5123144DECBA8C4170 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'DM_PLATFORM_IOS=1'",
+					"'DM_PLATFORM_APPLE=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../dm-utils/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-DDM_AUDIOMIDI_USE_COREAUDIO=1",
+					"-DDM_AUDIOMIDI_USE_OGG=1",
+					"-x",
+					"objective-c++",
+					"-std=c++0x",
+					"-stdlib=libc++",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "dm-audiomidi";
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(SRCROOT)/builds/MacOS";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		0ED882F89F78427695B3D984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = "/Volumes/Data/WORK/dinahmoe/nodal/dm-audiomidi/builds/MacOS/build";
+			};
+			name = Debug;
+		};
+		0FE9CF8E7CE645ECAABDC032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'DM_PLATFORM_IOS=1'",
+					"'DM_PLATFORM_APPLE=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../dm-utils/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-DDM_AUDIOMIDI_USE_COREAUDIO=1",
+					"-DDM_AUDIOMIDI_USE_OGG=1",
+					"-x",
+					"objective-c++",
+					"-std=c++0x",
+					"-stdlib=libc++",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "dm-audiomidi";
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(SRCROOT)/builds/MacOS";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		253D128BCE3B44ED969324A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = "/Volumes/Data/WORK/dinahmoe/nodal/dm-audiomidi/builds/MacOS/build";
+			};
+			name = Release;
+		};
+		BECEE41E9D264593BEBFB02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'DM_PLATFORM_IOS=1'",
+					"'DM_PLATFORM_APPLE=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../dm-utils/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DDM_AUDIOMIDI_USE_COREAUDIO=1",
+					"-DDM_AUDIOMIDI_USE_OGG=1",
+					"-x",
+					"objective-c++",
+					"-std=c++0x",
+					"-stdlib=libc++",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "dm-audiomidi";
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(SRCROOT)/builds/MacOS";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		DEE390EF52424299AE93D504 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = "/Volumes/Data/WORK/dinahmoe/nodal/dm-audiomidi/builds/MacOS/build";
+			};
+			name = RelWithDebInfo;
+		};
+		E3E8F229579B4CF596D614D6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'DM_PLATFORM_IOS=1'",
+					"'DM_PLATFORM_APPLE=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../dm-utils/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-DDM_AUDIOMIDI_USE_COREAUDIO=1",
+					"-DDM_AUDIOMIDI_USE_OGG=1",
+					"-x",
+					"objective-c++",
+					"-std=c++0x",
+					"-stdlib=libc++",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "dm-audiomidi";
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(SRCROOT)/builds/MacOS";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23C8551407C5498C9A2C4AB3 /* Build configuration list for PBXProject "dm-audiomidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED882F89F78427695B3D984 /* Debug */,
+				253D128BCE3B44ED969324A2 /* Release */,
+				0841C41DEC85461DB22FF620 /* MinSizeRel */,
+				DEE390EF52424299AE93D504 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3D7677D090C042DAA7E85EAB /* Build configuration list for PBXNativeTarget "dm-audiomidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECEE41E9D264593BEBFB02A /* Debug */,
+				0FE9CF8E7CE645ECAABDC032 /* Release */,
+				E3E8F229579B4CF596D614D6 /* MinSizeRel */,
+				0DC10D5123144DECBA8C4170 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B4DFA3A42A643BC813D5FB9 /* Project object */;
+}
